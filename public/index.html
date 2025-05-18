@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imani Frith | Full-Stack Developer & Designer</title>
+    <meta name="description" content="Professional portfolio of Imani Frith, a full-stack web developer and designer specializing in modern web applications.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Imani Frith | Full-Stack Developer & Designer">
+    <meta property="og:description" content="Professional portfolio of Imani Frith, a full-stack web developer and designer specializing in modern web applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://imanifrith.com">
+    <meta property="og:image" content="https://imanifrith.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Imani Frith | Full-Stack Developer & Designer">
+    <meta name="twitter:description" content="Professional portfolio of Imani Frith, a full-stack web developer and designer specializing in modern web applications.">
+    <meta name="twitter:image" content="https://imanifrith.com/twitter-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/_next/static/css/app.css" as="style">
+    <link rel="preload" href="/_next/static/chunks/main.js" as="script">
+    
+    <style>
+        /* Minimal styling for the loading state */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(to bottom, #fff7ed, #fdf2f8);
+            color: #1f2937;
+        }
+        
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .loading-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #f97316, #ec4899, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(249, 115, 22, 0.2);
+            border-radius: 50%;
+            border-top-color: #f97316;
+            border-left-color: #ec4899;
+            border-right-color: #3b82f6;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .loading-text {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(to bottom, #111827, #18181b);
+                color: #f9fafb;
+            }
+            
+            .loading-text {
+                color: #9ca3af;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading state that will be shown until Next.js hydrates the page -->
+    <div id="loading" class="loading-container">
+        <div class="loading-logo">Imani Frith</div>
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading amazing experiences...</div>
+    </div>
+    
+    <!-- Root element where Next.js will mount the application -->
+    <div id="__next"></div>
+    
+    <script>
+        // Hide loading screen once the app is loaded
+        window.addEventListener('load', function() {
+            // Give a slight delay to ensure everything is ready
+            setTimeout(function() {
+                document.getElementById('loading').style.display = 'none';
+            }, 500);
+        });
+        
+        // Fallback to hide loading if it takes too long
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+        }, 5000);
+    </script>
+    
+    <!-- This is where Next.js will inject its scripts -->
+</body>
+</html>
