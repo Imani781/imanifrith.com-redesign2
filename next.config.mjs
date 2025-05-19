@@ -2,15 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',  // This enables static exports
+  output: 'export',
   images: {
-    unoptimized: true,  // Required for static export
+    unoptimized: true,
   },
-  // The following is needed if your repo name isn't the same as your domain
-  // For example: github.com/username/portfolio-website
-  // Remove this if you're using a custom domain
+  // IMPORTANT: Replace 'Imanifrith.com-redesign' with your exact repository name
+  // The capitalization must match exactly
   basePath: process.env.NODE_ENV === 'production' ? '/Imanifrith.com-redesign' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/Imanifrith.com-redesign/' : '',
+  trailingSlash: true, // This helps with GitHub Pages routing
   eslint: {
     ignoreDuringBuilds: true,
   },
