@@ -9,29 +9,38 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # This is important for deployment
+      contents: write
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Setup Node.js ⚙️
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
+          # Remove the cache option that's causing issues
+          # cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Create package-lock.json if it doesn't exist
+        run: |
+          if [ ! -f package-lock.json ]; then
+            npm install --package-lock-only
+            git config --global user.name "GitHub Actions"
+            git config --global user.email "actions@github.com"
+          fi
 
-      - name: Build
+      - name: Install dependencies 📦
+        run: npm install
+
+      - name: Build 🏗️
         run: npm run build
 
       - name: Add .nojekyll file
         run: |
           touch out/.nojekyll
-          cp README.md out/
+          cp README.md out/ || echo "No README.md found"
 
-      - name: Deploy
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
