@@ -28,11 +28,11 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <motion.div
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
         >
           <h2 className="text-3xl font-bold">Get In Touch</h2>
           <div className="mt-2 h-1 w-20 bg-orange-500 mx-auto"></div>
@@ -48,36 +48,30 @@ export default function Contact() {
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <div className="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
-                    <MapPin className="h-5 w-5 text-orange-500" />
-                  </div>
+                <div className="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center mr-4">
+                  <MapPin className="h-5 w-5 text-orange-500" />
                 </div>
-                <div className="ml-4">
+                <div>
                   <h4 className="font-semibold">Location</h4>
                   <p className="text-gray-600 dark:text-gray-300">San Francisco, CA</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <div className="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
-                    <Mail className="h-5 w-5 text-orange-500" />
-                  </div>
+                <div className="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center mr-4">
+                  <Mail className="h-5 w-5 text-orange-500" />
                 </div>
-                <div className="ml-4">
+                <div>
                   <h4 className="font-semibold">Email</h4>
                   <p className="text-gray-600 dark:text-gray-300">contact@imanifrith.com</p>
                 </div>
               </div>
 
               <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <div className="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
-                    <Phone className="h-5 w-5 text-orange-500" />
-                  </div>
+                <div className="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center mr-4">
+                  <Phone className="h-5 w-5 text-orange-500" />
                 </div>
-                <div className="ml-4">
+                <div>
                   <h4 className="font-semibold">Phone</h4>
                   <p className="text-gray-600 dark:text-gray-300">(123) 456-7890</p>
                 </div>
@@ -86,11 +80,11 @@ export default function Contact() {
           </motion.div>
 
           <motion.div
+            className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>

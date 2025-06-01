@@ -29,11 +29,11 @@ export default function Projects() {
     <section id="projects" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
         >
           <h2 className="text-3xl font-bold">My Projects</h2>
           <div className="mt-2 h-1 w-20 bg-orange-500 mx-auto"></div>
@@ -43,11 +43,11 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
+              className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             >
               <div className="aspect-video overflow-hidden">
                 <img

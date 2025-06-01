@@ -11,11 +11,11 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <motion.div
+            className="mb-6 md:mb-0"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="mb-6 md:mb-0"
           >
             <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 via-pink-500 to-blue-500 text-transparent bg-clip-text">
               Imani Frith
@@ -24,19 +24,19 @@ export default function Footer() {
           </motion.div>
 
           <motion.div
+            className="flex space-x-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="flex space-x-6"
           >
-            <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors" aria-label="GitHub">
+            <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
               <Github className="h-6 w-6" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors" aria-label="LinkedIn">
+            <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
               <Linkedin className="h-6 w-6" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors" aria-label="Twitter">
+            <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
               <Twitter className="h-6 w-6" />
             </a>
           </motion.div>

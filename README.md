@@ -41,15 +41,3 @@ This project can be deployed to any static site hosting service like Vercel, Net
 ## License
 
 All rights reserved.
-\`\`\`
-
-Let's also remove the GitHub Pages specific files since they were added for deployment:
-
-
-
-
-
-
-
-
-Now let's make sure our React app is properly configured:
