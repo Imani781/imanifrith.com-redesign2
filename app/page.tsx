@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
+import ImageWithBasePath from "@/components/image-with-base-path"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ProjectCard from "@/components/project-card"
@@ -230,11 +230,11 @@ export default function Home() {
                   background in both development and design, I bring a unique perspective to every project.
                 </p>
                 <p>
-                  My approach combines technical skills with creative problem-solving, ensuring that the solutions I
+                  My approach combines technical excellence with creative problem-solving, ensuring that the solutions I
                   build are not only functional but also visually appealing and intuitive to use.
                 </p>
                 <p>
-                  When I'm not coding, you can find me exploring new technologies, immersed in a book,
+                  When I'm not coding, you can find me exploring new technologies, contributing to open-source projects,
                   or seeking inspiration through design and art.
                 </p>
               </div>
@@ -260,7 +260,7 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="relative w-64 h-64 md:w-80 md:h-80 mb-8 rounded-full overflow-hidden border-4 border-gradient-to-r from-orange-200 via-pink-200 to-blue-200 dark:from-yellow-800 dark:via-pink-800 dark:to-blue-800 shadow-xl"
               >
-                <Image src="/2.png" alt="Imani Frith" fill className="object-cover" priority />
+                <ImageWithBasePath src="/profile.jpg" alt="Imani Frith" fill className="object-cover" priority />
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 via-pink-500/20 to-blue-500/20 dark:from-yellow-500/20 dark:via-pink-500/20 dark:to-blue-500/20"
                   animate={{
@@ -297,7 +297,7 @@ export default function Home() {
                     <div className="h-6 w-6 rounded-full bg-orange-100 dark:bg-yellow-900/60 flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-orange-600 dark:text-yellow-400 text-sm font-bold">✓</span>
                     </div>
-                    <span className="dark:text-gray-200">7+ years of experience in web development</span>
+                    <span className="dark:text-gray-200">5+ years of experience in web development</span>
                   </motion.li>
                   <motion.li
                     initial={{ opacity: 0, x: -20 }}
@@ -309,7 +309,7 @@ export default function Home() {
                     <div className="h-6 w-6 rounded-full bg-pink-100 dark:bg-pink-900/60 flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-pink-600 dark:text-pink-400 text-sm font-bold">✓</span>
                     </div>
-                    <span className="dark:text-gray-200">Specialized in Data Visualization, KPI Monitoring, and Analysis</span>
+                    <span className="dark:text-gray-200">Specialized in React, Next.js, and modern JavaScript</span>
                   </motion.li>
                   <motion.li
                     initial={{ opacity: 0, x: -20 }}
@@ -345,7 +345,7 @@ export default function Home() {
                     <div className="h-6 w-6 rounded-full bg-pink-100 dark:bg-pink-900/60 flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-pink-600 dark:text-pink-400 text-sm font-bold">✓</span>
                     </div>
-                    <span className="dark:text-gray-200">Passionate about creating beautiful & functional web experiences</span>
+                    <span className="dark:text-gray-200">Passionate about creating accessible web experiences</span>
                   </motion.li>
                 </ul>
               </motion.div>
@@ -388,13 +388,13 @@ export default function Home() {
                   Frontend Development
                 </h3>
                 <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
-                  <SkillProgress name="React" percentage={75} color="orange" />
-                  <SkillProgress name="Next.js" percentage={50} color="orange" />
-                  <SkillProgress name="TypeScript" percentage={50} color="orange" />
-                  <SkillProgress name="JavaScript" percentage={78} color="orange" />
+                  <SkillProgress name="React" percentage={95} color="orange" />
+                  <SkillProgress name="Next.js" percentage={90} color="orange" />
+                  <SkillProgress name="TypeScript" percentage={85} color="orange" />
+                  <SkillProgress name="JavaScript" percentage={98} color="orange" />
                   <SkillProgress name="HTML5/CSS3" percentage={95} color="orange" />
-                  <SkillProgress name="Tailwind CSS" percentage={42} color="orange" />
-                  <SkillProgress name="Bootstrap" percentage={88} color="orange" />
+                  <SkillProgress name="Tailwind CSS" percentage={92} color="orange" />
+                  <SkillProgress name="Framer Motion" percentage={88} color="orange" />
                   <SkillProgress name="Redux" percentage={85} color="orange" />
                 </div>
               </motion.div>
@@ -406,13 +406,14 @@ export default function Home() {
               >
                 <h3 className="text-xl font-semibold mb-6 text-pink-600 dark:text-pink-400">Backend Development</h3>
                 <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
-                  <SkillProgress name="Node.js" percentage={60} color="pink" />
-                  <SkillProgress name="Express" percentage={68} color="pink" />
-                  <SkillProgress name="MongoDB" percentage={75} color="pink" />
-                  <SkillProgress name="MySQL" percentage={85} color="pink" />
-                  <SkillProgress name="GraphQL" percentage={65} color="pink" />
+                  <SkillProgress name="Node.js" percentage={90} color="pink" />
+                  <SkillProgress name="Express" percentage={88} color="pink" />
+                  <SkillProgress name="MongoDB" percentage={85} color="pink" />
+                  <SkillProgress name="PostgreSQL" percentage={80} color="pink" />
+                  <SkillProgress name="GraphQL" percentage={75} color="pink" />
                   <SkillProgress name="REST APIs" percentage={95} color="pink" />
-
+                  <SkillProgress name="Firebase" percentage={85} color="pink" />
+                  <SkillProgress name="Supabase" percentage={80} color="pink" />
                 </div>
               </motion.div>
               <motion.div
@@ -421,14 +422,14 @@ export default function Home() {
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 className="bg-white/50 dark:bg-gray-800/40 rounded-xl p-6 border border-blue-100 dark:border-blue-900/30 shadow-lg"
               >
-                <h3 className="text-xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Design & Additonal Skills</h3>
+                <h3 className="text-xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Design & Tools</h3>
                 <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
-                  <SkillProgress name="Figma" percentage={70} color="blue" />
-                  <SkillProgress name="Adobe Suite" percentage={85} color="blue" />
-                  <SkillProgress name="Generative AI" percentage={80} color="blue" />
-                  <SkillProgress name="Prompt Engineering" percentage={80} color="blue" />
-                  <SkillProgress name="Microsoft Suite" percentage={95} color="blue" />
-                  <SkillProgress name="Project Management" percentage={88} color="blue" />
+                  <SkillProgress name="Figma" percentage={90} color="blue" />
+                  <SkillProgress name="Adobe XD" percentage={85} color="blue" />
+                  <SkillProgress name="Git" percentage={95} color="blue" />
+                  <SkillProgress name="GitHub" percentage={95} color="blue" />
+                  <SkillProgress name="Vercel" percentage={90} color="blue" />
+                  <SkillProgress name="Netlify" percentage={88} color="blue" />
                   <SkillProgress name="Jest" percentage={80} color="blue" />
                   <SkillProgress name="Cypress" percentage={75} color="blue" />
                 </div>
@@ -564,27 +565,27 @@ export default function Home() {
                     className="flex items-center gap-3 text-gray-700 dark:text-gray-200 hover:text-orange-500 dark:hover:text-yellow-200 transition-colors"
                   >
                     <Mail className="h-5 w-5" />
-                    <span>imani@imanifrith.com</span>
+                    <span>hello@imanifrith.com</span>
                   </motion.a>
                   <motion.a
                     whileHover={{ x: 5, color: "#ec4899" }}
-                    href="https://github.com/imani781"
+                    href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-gray-700 dark:text-gray-200 hover:text-pink-500 dark:hover:text-pink-200 transition-colors"
                   >
                     <Github className="h-5 w-5" />
-                    <span>github.com/imani781</span>
+                    <span>github.com/imanifrith</span>
                   </motion.a>
                   <motion.a
                     whileHover={{ x: 5, color: "#3b82f6" }}
-                    href="https://linkedin.com/in/imani888"
+                    href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-200 transition-colors"
                   >
                     <Linkedin className="h-5 w-5" />
-                    <span>linkedin.com/in/imani888</span>
+                    <span>linkedin.com/in/imanifrith</span>
                   </motion.a>
                 </div>
               </motion.div>

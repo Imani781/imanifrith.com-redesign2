@@ -6,11 +6,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // IMPORTANT: Replace 'Imanifrith.com-redesign' with your exact repository name
-  // The capitalization must match exactly
-  basePath: process.env.NODE_ENV === 'production' ? '/Imanifrith.com-redesign' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Imanifrith.com-redesign/' : '',
-  trailingSlash: true, // This helps with GitHub Pages routing
+  // Make sure this matches your repository name exactly
+  basePath: process.env.NODE_ENV === 'production' ? '/imanifrith.com-redesign2' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/imanifrith.com-redesign2/' : '',
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },

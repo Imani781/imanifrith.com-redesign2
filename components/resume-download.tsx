@@ -18,7 +18,7 @@ export default function ResumeDownload() {
             : "bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600"
         } text-white shadow-lg hover:shadow-xl transition-all duration-300`}
       >
-        <a href="/GenResJan25.pdf" download="Imani_Frith_Resume.pdf">
+        <a href="/resume.pdf" download="Imani_Frith_Resume.pdf">
           <span className="flex items-center gap-2">
             <FileText className="h-5 w-5" />
             <span className="font-medium">Download Resume</span>
