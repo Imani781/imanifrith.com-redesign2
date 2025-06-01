@@ -1,0 +1,19 @@
+import { Routes, Route } from "react-router-dom"
+import { ThemeProvider } from "./components/theme-provider"
+import ScrollProgress from "./components/scroll-progress"
+import Home from "./pages/Home"
+import NotFound from "./pages/NotFound"
+
+function App() {
+  return (
+    <ThemeProvider defaultTheme="light" storageKey="theme">
+      <ScrollProgress />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </ThemeProvider>
+  )
+}
+
+export default App

@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "react-router-dom"
 
 export default function NotFound() {
   return (
@@ -7,7 +7,7 @@ export default function NotFound() {
       <h2 className="mt-4 text-2xl font-semibold">Page Not Found</h2>
       <p className="mt-2 text-muted-foreground">The page you're looking for doesn't exist or has been moved.</p>
       <Link
-        href="/"
+        to="/"
         className="mt-8 px-6 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
       >
         Go Home

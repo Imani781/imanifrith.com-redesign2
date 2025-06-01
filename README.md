@@ -14,47 +14,42 @@ A professional portfolio website showcasing my work as a full-stack developer an
 
 ## Tech Stack
 
-- Next.js
+- React.js
 - TypeScript
 - Tailwind CSS
 - Framer Motion
 - Lucide React icons
-- Shadcn UI components
-
-## Deployment
-
-This project is configured for deployment on Heroku.
-
-### Deployment Steps
-
-1. Create a Heroku account if you don't have one
-2. Install the Heroku CLI
-3. Login to Heroku CLI:
-   \`\`\`
-   heroku login
-   \`\`\`
-4. Create a new Heroku app:
-   \`\`\`
-   heroku create imani-frith-portfolio
-   \`\`\`
-5. Deploy to Heroku:
-   \`\`\`
-   git push heroku main
-   \`\`\`
+- Radix UI components
 
 ## Local Development
 
 1. Clone the repository
 2. Install dependencies:
-   \`\`\`
-   npm install
-   \`\`\`
+ \`\`\`
+ npm install
+ \`\`\`
 3. Run the development server:
-   \`\`\`
-   npm run dev
-   \`\`\`
+ \`\`\`
+ npm start
+ \`\`\`
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Deployment
+
+This project can be deployed to any static site hosting service like Vercel, Netlify, or GitHub Pages.
 
 ## License
 
 All rights reserved.
+\`\`\`
+
+Let's also remove the GitHub Pages specific files since they were added for deployment:
+
+
+
+
+
+
+
+
+Now let's make sure our React app is properly configured:
